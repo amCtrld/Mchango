@@ -9,3 +9,6 @@ Mchango is a user-friendly online platform designed to facilitate charitable don
 - Secure payment processing: Utilize a reliable payment gateway to ensure secure transactions.
 - Transparent impact reporting: Provide regular updates on how donations are used.
 - Donor management: Allow donors to track their contributions and receive tax receipts.
+
+## Tech Stack
+Paymet
