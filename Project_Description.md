@@ -11,4 +11,5 @@ Mchango is a user-friendly online platform designed to facilitate charitable don
 - Donor management: Allow donors to track their contributions and receive tax receipts.
 
 ## Tech Stack
-Paymet
+
+Payment - Daraja API Mpesa
