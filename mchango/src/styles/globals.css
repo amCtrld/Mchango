@@ -1,0 +1,40 @@
+:root {
+    --color-primary: #ACE1AF;
+    --color-secondary: #B0EBB4;
+    --color-tertiary: #BFF6C3;
+    --color-background: #E0FBE2;
+    --color-text: #2C3E50;
+    --color-accent: #3498DB;
+    --color-white: #FFFFFF;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    color: var(--color-text);
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--color-secondary);
+  }

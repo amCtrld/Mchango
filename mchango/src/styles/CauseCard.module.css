@@ -1,0 +1,65 @@
+.card {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .progressContainer {
+    margin-bottom: 15px;
+  }
+  
+  .progressBar {
+    background-color: var(--color-background);
+    border-radius: 10px;
+    height: 10px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .progressFill {
+    background-color: var(--color-accent);
+    height: 100%;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .progressText {
+    font-size: 0.9rem;
+    color: var(--color-text);
+    text-align: right;
+    margin-top: 5px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .name {
+    font-size: 1.1rem;
+    margin: 0;
+    flex: 1;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .donateButton, .detailsButton {
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .donateButton {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+  }
+  
+  .detailsButton {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+  }

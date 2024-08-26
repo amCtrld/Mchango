@@ -1,5 +1,4 @@
-import React from 'react';
-import CauseCard from '../../components/CauseCard';
+import CauseCard from './CauseCard';
 import styles from './Causes.module.css';
 
 const causes = [
@@ -22,8 +21,8 @@ const causes = [
 
 export default function Causes() {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>Current Causes</h1>
+    <div className={styles.causes}>
+      <h2>Current Causes</h2>
       <div className={styles.causesList}>
         {causes.map((cause, index) => (
           <CauseCard key={index} {...cause} />
