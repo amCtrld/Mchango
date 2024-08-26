@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './CauseCard.module.css';
+import styles from '../styles/CauseCard.module.css';
 
 const CauseCard = ({ name, target, progress }) => {
   const percentage = Math.min((progress / target) * 100, 100);

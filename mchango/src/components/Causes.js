@@ -1,5 +1,5 @@
 import CauseCard from './CauseCard';
-import styles from './Causes.module.css';
+import styles from '../styles/Causes.module.css';
 
 const causes = [
   {
