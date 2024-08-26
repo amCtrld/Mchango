@@ -1,31 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
+import DonateForm from './DonateForm';
 import styles from '../styles/CauseCard.module.css';
 
-const CauseCard = ({ name, target, progress }) => {
-  const percentage = Math.min((progress / target) * 100, 100);
+export default function CauseCard({ name, target, progress }) {
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
+  const handleDonateClick = () => {
+    setIsFormOpen(true);
+  };
+
+  const handleReturnClick = () => {
+    setIsFormOpen(false);
+  };
 
   return (
     <div className={styles.card}>
-      <div className={styles.progressContainer}>
-        <div className={styles.progressBar}>
-          <div 
-            className={styles.progressFill} 
-            style={{ width: `${percentage}%` }}
-          ></div>
-        </div>
-        <div className={styles.progressText}>
-          ${progress.toLocaleString()} / ${target.toLocaleString()}
-        </div>
-      </div>
-      <div className={styles.content}>
-        <h3 className={styles.name}>{name}</h3>
-        <div className={styles.buttons}>
-          <button className={styles.donateButton}>Donate</button>
-          <button className={styles.detailsButton}>Details</button>
-        </div>
-      </div>
+      {isFormOpen ? (
+        <DonateForm cause={{ name, target, progress }} onReturn={handleReturnClick} />
+      ) : (
+        <>
+          <h3 className={styles.name}>{name}</h3>
+          <div className={styles.progressContainer}>
+            <div className={styles.progressBar}>
+              <div
+                className={styles.progressFill}
+                style={{ width: `${(progress / target) * 100}%` }}
+              ></div>
+            </div>
+            <p className={styles.progressText}>
+              {progress} of {target} raised
+            </p>
+          </div>
+          <div className={styles.buttons}>
+            <button onClick={handleDonateClick} className={styles.donateButton}>
+              Donate
+            </button>
+          </div>
+        </>
+      )}
     </div>
   );
-};
-
-export default CauseCard;
+}

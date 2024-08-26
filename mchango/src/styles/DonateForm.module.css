@@ -1,0 +1,30 @@
+.formContainer {
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formInput {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--color-border);
+  }
+  
+  .donateButton {
+    padding: 10px 20px;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .returnButton {
+    margin-top: 20px;
+    background-color: var(--color-secondary);
+  }
+  
