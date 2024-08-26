@@ -30,7 +30,7 @@ export default function MainPage() {
     <div className={styles.container}>
       <header className={styles.header}>
         <div className={styles.logo} onClick={() => setCurrentComponent('home')}>
-          <Image src="/logo.png" alt="Mchango Logo" width={30} height={30} />
+        <Image src="/images/logo2.png" alt="Mchango Logo" width={50} height={50} />
           <h1>Mchango</h1>
         </div>
       </header>
