@@ -6,9 +6,8 @@
     background-color: var(--color-tertiary);
     padding: 20px;
     border-radius: 10px;
-    margin-top: 30px;
   }
   
-  .card h3 {
+  .card h2 {
     margin-bottom: 15px;
   }
